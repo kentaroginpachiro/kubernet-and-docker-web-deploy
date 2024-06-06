@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: web-deploy
+spec:
+  containers:
+    - name: web-deploy
+      image: kemal084/web-deploy:1.0
+      ports:
+      - containerPort: 80
